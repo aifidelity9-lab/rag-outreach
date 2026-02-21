@@ -61,7 +61,7 @@ CHINESE_CHAR_PATTERN = re.compile(r"[\u4e00-\u9fff]")
 # --- Seed data for testing when search engines block us ---
 
 SEED_COMPANIES = [
-    # --- Real Chinese-owned customs brokers in LA (from search results) ---
+    # === Chinese-owned customs brokers in LA ===
     {
         "name": "Speed C CHB 美国速通清关",
         "url": "https://www.speedcchb.com",
@@ -73,11 +73,6 @@ SEED_COMPANIES = [
         "snippet": "Chinese-owned customs brokerage at 5250 W. Century Blvd., #458, Los Angeles, CA 90045. Import entry filing and clearance services. 中美报关行. Phone: (310) 410-0610",
     },
     {
-        "name": "Lee Co. Customs Broker",
-        "url": "https://www.yelp.com/biz/lee-company-customs-broker-los-angeles",
-        "snippet": "Licensed customs broker at 11099 S. La Cienega Blvd., #152, Los Angeles, CA 90045. Import clearance and customs entry services. Phone: (310) 417-6300",
-    },
-    {
         "name": "Master Customs Service 万事达报关行",
         "url": "https://www.yelp.com/biz/master-customs-broker-los-angeles",
         "snippet": "Chinese-owned customs broker at 11099 S. La Cienega Blvd., #245, Los Angeles, CA 90045. Import customs clearance, entry filing. 万事达报关行 进口报关. Phone: (310) 670-8898",
@@ -85,7 +80,7 @@ SEED_COMPANIES = [
     {
         "name": "ORIOX CHB 華捷報關行",
         "url": "https://www.orioxchb.com",
-        "snippet": "Chinese-speaking customs broker offering bilingual customs brokerage services. Specializes in serving Chinese importers with customs entry filing and clearance. 華捷報關行 中文报关服务",
+        "snippet": "Chinese-speaking customs broker offering bilingual customs brokerage services. Specializes in serving Chinese importers with customs entry filing and clearance. 華捷報關行 中文报关服务. Phone: (650) 866-3679",
     },
     {
         "name": "Great Way Trading & Transportation 大道报关",
@@ -93,14 +88,71 @@ SEED_COMPANIES = [
         "snippet": "First licensed corporate customs brokerage established by a professional from Mainland China. Specializes in clearing goods imported from China. Permits in Los Angeles and San Francisco. 大道报关 中国进口清关",
     },
     {
+        "name": "Juliana Lim CHB",
+        "url": "https://www.yelp.com/search?cflt=customsbrokers&find_loc=Los+Angeles,+CA",
+        "snippet": "Licensed customs house broker in Los Angeles. Chinese-owned CHB specializing in import clearance and customs entry services for Asian importers.",
+    },
+    # === Major / national customs brokers with LA operations ===
+    {
         "name": "Omega CHB International",
         "url": "https://omegachb.com",
-        "snippet": "Over 25 years in customs brokerage in Los Angeles. Full-service import/export customs broker at LA/Long Beach ports. Customs entries, classification, compliance, ISF filing.",
+        "snippet": "Over 25 years in customs brokerage in Los Angeles. Full-service import/export customs broker at LA/Long Beach ports. Nationally licensed. Customs entries, classification, compliance, ISF filing. Phone: (310) 988-1280",
     },
     {
         "name": "Fleischer International",
         "url": "https://www.fleischer-chb.com",
-        "snippet": "US customs broker headquartered in Los Angeles. Licensed CHB providing customs brokerage, freight forwarding, and trade compliance services at LA/Long Beach ports.",
+        "snippet": "US customs broker headquartered in Los Angeles. Licensed CHB providing customs brokerage, freight forwarding, and trade compliance services at LA/Long Beach ports. Phone: (310) 671-6402",
+    },
+    {
+        "name": "Packair Customs Broker",
+        "url": "https://www.packair.com",
+        "snippet": "Customs broker and freight forwarder in Los Angeles for over 47 years. At 5510 W. 104th St., LA 90045. Served Sony Pictures, Paramount, JPL. Customs entries, ISF, ABI filing. Phone: (310) 337-9993",
+    },
+    {
+        "name": "Gallagher Transport International",
+        "url": "https://gallaghertransport.com",
+        "snippet": "US customs broker since 1990 at 385 Van Ness Ave, Suite 120, Torrance, CA 90501. Customs clearance and global logistics at LA/Long Beach ports. Phone: (310) 322-3228",
+    },
+    {
+        "name": "Norman Krieger Inc.",
+        "url": "https://nkinc.com",
+        "snippet": "Customs brokerage for import and export with outstanding personalized service. Highly trained personnel in classification, entry preparation and logistics coordination at LA/Long Beach.",
+    },
+    {
+        "name": "John C. McNulty Customs Broker",
+        "url": "https://mcnultycustomsbroker.com",
+        "snippet": "Licensed customs broker at 249 East Ocean Blvd, Suite 801, Long Beach, CA 90802. Import entry filing and customs clearance at Port of Long Beach. Phone: (562) 628-9700",
+    },
+    {
+        "name": "ITC-Diligence International",
+        "url": "https://ftzconsultants.com",
+        "snippet": "National international trade consultant based in Southern California. Customs broker services at Port of Long Beach and Port of Los Angeles. FTZ consulting and compliance.",
+    },
+    {
+        "name": "David W. Bailey LCB",
+        "url": "https://www.dwbchb.com",
+        "snippet": "Licensed customs broker servicing LAX and the Ports of Los Angeles & Long Beach. Import/export consulting, customs clearance, and entry filing services.",
+    },
+    {
+        "name": "Flexport",
+        "url": "https://www.flexport.com",
+        "snippet": "Technology-driven freight forwarder and customs broker with major LA operations. Handles customs entries, ISF filings, and import compliance for ocean and air freight.",
+    },
+    {
+        "name": "C.H. Robinson",
+        "url": "https://www.chrobinson.com",
+        "snippet": "One of the largest logistics and customs brokerage companies in the US. Los Angeles office handles customs clearance, entry filing, and trade compliance for importers.",
+    },
+    {
+        "name": "Expeditors International",
+        "url": "https://www.expeditors.com",
+        "snippet": "Global logistics company with customs brokerage at LA/Long Beach. Licensed CHB handling entry summaries, classification, and duty management.",
+    },
+    # === Mid-size and local LA customs brokers ===
+    {
+        "name": "Los Angeles Customs Broker (LACB)",
+        "url": "https://losangelescustomsbroker.us",
+        "snippet": "Premier customs broker in Southern California. US, Mexican and Canadian customs brokerage, freight forwarding. Entry filing, compliance, ISF, bonded warehouse. Phone: (323) 645-2444",
     },
     {
         "name": "Alta Logistics Customs Brokers",
@@ -113,14 +165,14 @@ SEED_COMPANIES = [
         "snippet": "Customs broker at 11099 S La Cienega Blvd, Suite 202, Los Angeles, CA 90045. Licensed CHB handling import entries at LA/Long Beach ports.",
     },
     {
-        "name": "Packair Customs Broker",
-        "url": "https://www.packair.com",
-        "snippet": "Customs broker and freight forwarder in Los Angeles for over 47 years. Licensed CHB serving major studios and importers. Customs entries, ISF, ABI filing at LA/Long Beach.",
+        "name": "Lee Co. Customs Broker",
+        "url": "https://www.yelp.com/biz/lee-company-customs-broker-los-angeles",
+        "snippet": "Licensed customs broker at 11099 S. La Cienega Blvd., #152, Los Angeles, CA 90045. Import clearance and customs entry services. Phone: (310) 417-6300",
     },
     {
-        "name": "Los Angeles Customs Broker (LACB)",
-        "url": "https://losangelescustomsbroker.us",
-        "snippet": "Full-service customs brokerage in Southern California. Import entry filing, customs clearance, trade compliance, ISF, and bonded warehouse services at LA/Long Beach ports.",
+        "name": "TKK Custom Brokers",
+        "url": "https://www.tkkcustombrokers.com",
+        "snippet": "Licensed customs broker near Los Angeles. Customs entry, clearance, and compliance services at LA/Long Beach ports. Phone: (310) 670-8600",
     },
     {
         "name": "International LinK Logistics",
@@ -130,7 +182,7 @@ SEED_COMPANIES = [
     {
         "name": "MBC Brokers",
         "url": "https://www.mbcbrokers.com",
-        "snippet": "Licensed customs house broker in Los Angeles area. Import entry filing, customs clearance, compliance consulting for importers at LA/Long Beach ports.",
+        "snippet": "Licensed customs house broker in Los Angeles area. Import entry filing, customs clearance, compliance consulting for importers at LA/Long Beach ports. Phone: (905) 566-1999",
     },
     {
         "name": "JJM Customs Broker",
@@ -138,14 +190,9 @@ SEED_COMPANIES = [
         "snippet": "Customs brokerage firm serving importers in the Los Angeles and Long Beach port area. Licensed CHB handling entry summaries, HTS classification, and duty management.",
     },
     {
-        "name": "Juliana Lim CHB",
-        "url": "https://www.yelp.com/search?cflt=customsbrokers&find_loc=Los+Angeles,+CA",
-        "snippet": "Licensed customs house broker in Los Angeles. Chinese-owned CHB specializing in import clearance and customs entry services for Asian importers.",
-    },
-    {
         "name": "EMD Customs Broker & Logistics",
         "url": "https://www.emdcustoms.com",
-        "snippet": "Customs broker and logistics company in the Los Angeles area. Licensed CHB providing import entry filing, ISF, FDA/USDA clearance services.",
+        "snippet": "Customs broker and logistics company in Santa Ana / LA area. Licensed CHB providing import entry filing, ISF, FDA/USDA clearance services.",
     },
     {
         "name": "Fleet Broker USA",
@@ -153,14 +200,35 @@ SEED_COMPANIES = [
         "snippet": "Customs brokerage and freight services in Los Angeles. Import customs clearance, entry filing, and trade compliance at LA/Long Beach ports.",
     },
     {
-        "name": "TKK Custom Brokers",
-        "url": "https://www.tkkcustombrokers.com",
-        "snippet": "Licensed customs broker near Los Angeles serving importers with customs entry, clearance, and compliance services at LA/Long Beach ports.",
+        "name": "Current International Freight",
+        "url": "https://www.currentintlfreight.com",
+        "snippet": "Customs brokerage and freight forwarding company in LA area. 100% positive client feedback. Turnkey approach from customs compliance to local delivery.",
     },
+    {
+        "name": "UTC Overseas",
+        "url": "https://www.utcoverseas.com",
+        "snippet": "Freight forwarder and customs broker at 9133 S. La Cienega Blvd., Inglewood, CA 90301. Import/export customs clearance near LAX. Phone: (310) 642-0551",
+    },
+    {
+        "name": "Unitrans International Corporation",
+        "url": "https://www.aborhub.com",
+        "snippet": "Customs broker and freight forwarder at 709 Hindry Ave., Inglewood, CA 90301. LAX office handling import customs entries. Phone: (310) 410-7676",
+    },
+    {
+        "name": "Weiss-Rohlig USA",
+        "url": "https://www.weiss-rohlig.com",
+        "snippet": "Global freight forwarder and customs broker at 19701 Hamilton Ave, Suite 210, Torrance, CA 90502. Import/export customs clearance at LA/Long Beach. Phone: (310) 414-9300",
+    },
+    {
+        "name": "Los Angeles Forwarders and Brokers",
+        "url": "https://losangelesforwardersandbrokers.com",
+        "snippet": "Customs brokerage and freight forwarding services in Los Angeles. Import entry filing, customs clearance, and trade compliance at LA/Long Beach ports.",
+    },
+    # === Software / platform (potential partner or competitor insight) ===
     {
         "name": "NetCHB (Customs Entry Software)",
         "url": "https://www.netchb.com",
-        "snippet": "NetCHB is a popular web-based customs entry software used by many small and mid-size customs brokers in LA. Many Chinese-owned CHBs use NetCHB for filing entries with CBP.",
+        "snippet": "Popular web-based customs entry software used by many small and mid-size customs brokers in LA. Many CHBs use NetCHB for filing entries with CBP. Key integration target.",
     },
 ]
 
